@@ -25,19 +25,17 @@ function colorPicker2(v){
       return "#7B848F";                
     }
   }
-var letters3 = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var letters3 = ["Assault", "Larceny Theft","Malicious Mischief", "Non-Criminal", "Other Misc"];
 var updateData2 = function() {
   // get the textarea "value" (i.e. the entered text)
   let text = d3.select("body").select("textarea").node().value;
   let map1 = new Map([["Monday", 1], ["Sunday", 2] ,["Friday", ]]); 
   let map2 = d3.map();
-  map2.set("Monday",9939);
-  map2.set("Sunday", 52999);
-  map2.set("Tuesday", 9717);
-  map2.set("Wednesday", 10546);
-  map2.set("Thursday", 113182);
-  map2.set("Friday", 10000);
-  map2.set("Saturday", 10000);
+  map2.set("Assault",9939);
+  map2.set("Larceny Theft", 52999);
+  map2.set("Malicious Mischief", 9717);
+  map2.set("Non-Criminal", 10546);
+  map2.set("Other Misc", 113182);
 
 
 
