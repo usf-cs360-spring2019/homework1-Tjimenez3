@@ -2,7 +2,7 @@
  * this function will grab the latest text from our text area and update
  * the letter counts
  */
-function colorPicker2(v){
+function colorPicker3(v){
     if(v=== "Sunday") { 
       return "#1170AA"
     }
@@ -25,8 +25,8 @@ function colorPicker2(v){
       return "#7B848F";                
     }
   }
-var letters3 = ["Assault", "Larceny Theft","Malicious Mischief", "Non-Criminal", "Other Misc"];
-var updateData2 = function() {
+var letters4 = ["Assault", "Larceny Theft","Malicious Mischief", "Non-Criminal", "Other Misc"];
+var updateData3 = function() {
   // get the textarea "value" (i.e. the entered text)
   let text = d3.select("body").select("textarea").node().value;
   let map1 = new Map([["Monday", 1], ["Sunday", 2] ,["Friday", ]]); 
