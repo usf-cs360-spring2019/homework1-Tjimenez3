@@ -7,7 +7,7 @@ function colorPicker2(v){
       return "#1170AA"
     }
     else if (v=== "Monday"){ 
-      return "#FC7D0B";                
+      return "#FC7D0A";                
     }
     else if (v=== "Tuesday"){ 
       return "#A3ACB9";                
@@ -62,7 +62,7 @@ var drawBarChart2 = function() {
   let count = updateData2()
 
   // get the svg to draw on
-  let svg = d3.select("body").select("svg");
+  let svg = d3.select("#svg2").select("svg");
 
   /*
    * we will need to map our data domain to our svg range, which
