@@ -140,8 +140,8 @@ var drawBarChart = function() {
 
   // now lets draw our x- and y-axis
   // these require our x (letter) and y (count) scales
-  let xAxis = d3.axisBottom(letterScale);
-  let yAxis = d3.axisRight(countScale);
+  let xAxis = d3.axisBottom(letterScale).tickSize(0);
+  let yAxis = d3.axisRight(countScale).tickSize(0);
 
   // check if we have already drawn our axes
   if (plot.select("g#y-axis").size() < 1) {
