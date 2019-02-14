@@ -2,7 +2,7 @@
  * this function will grab the latest text from our text area and update
  * the letter counts
  */
-function colorPicker(v){
+function colorPicker2(v){
     if(v=== "Sunday") { 
       return "#1170AA"
     }
@@ -25,8 +25,8 @@ function colorPicker(v){
       return "#7B848F";                
     }
   }
-var letters2 = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var updateData = function() {
+var letters3 = ["Sunday", "Monday","Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var updateData2 = function() {
   // get the textarea "value" (i.e. the entered text)
   let text = d3.select("body").select("textarea").node().value;
   let map1 = new Map([["Monday", 1], ["Sunday", 2] ,["Friday", ]]); 
@@ -57,9 +57,9 @@ var updateData = function() {
  * our massive function to draw a bar chart. note some stuff in here
  * is bonus material (for transitions and updating the text)
  */
-var drawBarChart = function() {
+var drawBarChart2 = function() {
   // get the data to visualize
-  let count = updateData()
+  let count = updateData2()
 
   // get the svg to draw on
   let svg = d3.select("body").select("svg");
@@ -128,7 +128,7 @@ var drawBarChart = function() {
    * https://github.com/d3/d3-scale#band-scales
    */
   let letterScale = d3.scaleBand()
-    .domain(letters2) // all letters (not using the count here)
+    .domain(letters3) // all letters (not using the count here)
     .rangeRound([0, plotWidth])
     .paddingInner(0.1); // space between bars
 
@@ -213,7 +213,7 @@ var drawBarChart = function() {
     .attr("height", function(d) {
       return plotHeight - countScale(d.value);
     })
-  	.attr("fill", function(d){return colorPicker(d.key);
+  	.attr("fill", function(d){return colorPicker2(d.key);
                                             })
     .each(function(d, i, nodes) {
       console.log("Added bar for:", d.key);
