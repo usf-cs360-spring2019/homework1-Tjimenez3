@@ -31,11 +31,11 @@ var updateData2 = function() {
   let text = d3.select("body").select("textarea").node().value;
   let map1 = new Map([["Monday", 1], ["Sunday", 2] ,["Friday", ]]); 
   let map2 = d3.map();
-  map2.set("Assault",9939);
-  map2.set("Larceny Theft", 52999);
-  map2.set("Malicious Mischief", 9717);
-  map2.set("Non-Criminal", 10546);
-  map2.set("Other Misc", 13182);
+  map2.set("Assault",727);
+  map2.set("Larceny Theft", 4032);
+  map2.set("Malicious Mischief", 675);
+  map2.set("Non-Criminal", 701);
+  map2.set("Other Misc", 948);
 
 
 
