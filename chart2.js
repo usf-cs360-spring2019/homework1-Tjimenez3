@@ -31,7 +31,7 @@ var updateData2 = function() {
   let text = d3.select("body").select("textarea").node().value;
   let map1 = new Map([["Monday", 1], ["Sunday", 2] ,["Friday", ]]); 
   let map2 = d3.map();
-  map2.set("Monday",35);
+  map2.set("Monday",36);
   map2.set("Sunday", 20);
   map2.set("Tuesday", 19);
   map2.set("Wednesday", 13);
