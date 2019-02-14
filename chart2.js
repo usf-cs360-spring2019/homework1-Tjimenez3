@@ -55,7 +55,7 @@ var updateData2 = function() {
  * our massive function to draw a bar chart. note some stuff in here
  * is bonus material (for transitions and updating the text)
  */
-var drawBarChart2 = function() {
+var drawSecondBarChart = function() {
   // get the data to visualize
   let count = updateData2()
 
