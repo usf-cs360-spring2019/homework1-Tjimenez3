@@ -36,6 +36,8 @@ var updateData2 = function() {
   map2.set("Tuesday", 9717);
   map2.set("Wednesday", 10546);
   map2.set("Thursday", 113182);
+  map2.set("Friday", 10000);
+  map2.set("Saturday", 10000);
 
 
 
