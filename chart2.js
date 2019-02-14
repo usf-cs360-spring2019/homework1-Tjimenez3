@@ -35,7 +35,7 @@ var updateData2 = function() {
   map2.set("Larceny Theft", 52999);
   map2.set("Malicious Mischief", 9717);
   map2.set("Non-Criminal", 10546);
-  map2.set("Other Misc", 113182);
+  map2.set("Other Misc", 13182);
 
 
 
