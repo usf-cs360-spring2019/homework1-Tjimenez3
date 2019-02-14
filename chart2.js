@@ -7,7 +7,7 @@ function colorPicker2(v){
       return "#1170AA"
     }
     else if (v=== "Monday"){ 
-      return "#FC7D0A";                
+      return "#0af755";                
     }
     else if (v=== "Tuesday"){ 
       return "#A3ACB9";                
