@@ -223,7 +223,7 @@ var drawBarChart2 = function() {
       .attr("transform",
             `translate(475,${plotHeight - (margin.bottom +-130)})`)
       .style("text-anchor", "middle")
-      .text("Incident Day of the Week");
+      .text("Incident Category");
   
   svg.append("text")
       .attr("transform", "rotate(-90)")
@@ -237,7 +237,7 @@ var drawBarChart2 = function() {
     .attr("x", plotWidth / 2 )
     .attr("y", 30)
     .style("text-anchor", "middle")
-    .text("Comparing Amount of Incidents per Day in USF");
+    .text("Comparing Number of Records of Top 5 Incidents");
     
 
   // notice there will not be bars created for missing letters!
